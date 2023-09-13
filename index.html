@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Video Player</title>
+    <style>
+        /* Apply styles to the body for background color */
+        body {
+            background-color: purple;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Set the body height to the viewport height */
+        }
+
+        /* Style the video container */
+        .video-container {
+            max-width: 100%; /* Make the video responsive */
+        }
+    </style>
 </head>
 <body>
     <h1>My HTML5 Video Player</h1>
-    <video controls width="640" height="360">
-        <source src="WhatsApp Video 2023-09-13 at 4.01.44 PM.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="WhatsApp Video 2023-09-13 at 4.01.44 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
